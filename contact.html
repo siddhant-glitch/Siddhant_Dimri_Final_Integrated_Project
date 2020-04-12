@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<title>Contact-Page</title>
+	<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+<nav>
+		<h2 class="hidden">main nav</h2>
+		<ul class="resize">
+			<a href="index.html" class="button2"><span>Home</span></a>
+            <a href="about.html" class="button2"><span>About</span></a>
+            <div id="contactLogo">
+			<img src="images/Contactlogo.png" alt="logocontactlogo">
+		</div>
+		</ul>
+	</nav>
+<body class="contactSmall">
+<header id="mainHeader">
+	<h1 class="hidden">Contact page</h1>
+	
+</header>
+<section>
+<h2>Having trouble?</h2>
+<p>If you can't find what you're looking for, here are a couple ways to contact us.</p>
+<br>
+<h3>Create Case</h3>
+
+<form autocomplete="on" action="email.php" method="post">
+	<label>email address:</label>
+	<input type="email" placeholder="you@example.com">
+		<br><br>
+	<label>Type</label>
+	<input type="text" list="datList" placeholder="--none selected--">
+	<datalist id="datList">
+		<option>Link Up</option>
+		<option>Featuring Content</option>
+		<option>Connect with the Author</option>
+		<option>Other</option>
+	</datalist>
+	<br>
+	<br>
+	
+
+	<label>Your Name</label>
+	<input type="text" placeholder="First and Last Name" required>
+	<br><br>
+	<label>Description</label>
+	<textarea placeholder="Any other info can be put in here"></textarea>
+	<br><br>
+	<button type="submit">Next</button>
+</form>
+
+ </section>
+<footer>
+	<nav>
+		<h2 class="hidden">footer nav</h2>
+		<ul>
+		    <a href="index.html" class="button2"><span>Home</span></a>
+            <a href="contact.html" class="button2"><span>Contact</span></a>
+		</ul>
+	</nav>
+</footer>
+</body>
+</html>
