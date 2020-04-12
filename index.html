@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Writer's Block</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+<body>
+	<section id="topBar">
+     <h2 class="hidden">Topbar</h2> 
+    </section><!--end topBar-->
+
+        <header id="mainHeader" class="Rectangle_1">
+            <h2 class="hidden">Main Header</h2>
+            <div id="logo">
+                <img src="images/ed.png" alt="logo" class="log">
+                <h1>Writer's Block</h1>
+            </div><!--end logo-->
+
+            <nav id="mainNav" class="Rectangle_1">
+                <h2 class="hidden">Main nav</h2>
+
+                                                            
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">Seasons</a>
+    <a href="#">An Ode to Clouds</a>
+    <a href="#">Time</a>
+    <a href="#">Expression</a>
+    <a href="#">What's Real?</a>
+
+
+  </div>
+</div>
+
+<span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; All Posts</span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+                <a href="contact.html" class="button"><span>Contact</span></a>
+                <a href="about.html" class="button"><span>About</span></a>
+            </nav><!--end mainNav-->
+        </header><!--end mainHeader-->
+
+	<div id="siteContainer">
+    
+        <section id="promo">
+            <h2 class="hidden">Promo Text</h2>
+        	<div id="promoText">
+             <img src="images/lay.png" alt="main image">    
+            </div><!--end promoText-->
+        	<div id="promoImage">
+                <p>Welcome to our blog! Follow up through writeups that came to us because of the peace that the hills gave and pictures of the mountains from where we belong.</p>
+            </div><!--end promoImage-->
+        </section><!--end promo-->
+        <div id="latest">
+            <h2>Latest Posts</h2>
+        </div>
+        <section id="productInfo">
+            <h2 class="hidden">Posts</h2>
+        	<section class="productDesc">
+                <h2>20/11/2019<br>Seasons</h2>
+                <a href="page1.html"><img src="images/seasons_small.png" alt="1st post(seasons)"></a>
+                <p>Summer is when you Spring into life. Winter is when you Fall. Summer is when you evoke the spirit of renewal <a href="#">...Read More</a></p>
+            </section><!--end productDesc1-->
+
+
+            <section class="productDesc">
+                <h2>29/09/2019<br>An ode to Clouds</h2>
+                <a href="page2.html"><img src="images/clouds_small.png" alt="2nd post(clouds)"></a>
+                <p>Time stops when I see you My heart stops when I see you There's peace and silen<a href="#">...Read More</a></p>
+            </section><!--end productDesc2-->
+
+
+            <section class="productDesc">
+                <h2>03/09/2019<br>Time</h2>
+                <a href="page3.html"><img src="images/timesmall.png" alt="3rd post(time)"></a>
+                <p>Don't wait. Time stops for none. You are at a beach and you want to hold this memo<a href="#">...Read More</a></p>
+            </section><!--end productDesc3-->
+
+
+            <section class="productDesc">
+                <h2>15/08/2019<br>Expression</h2>
+                <a href="page4.html"><img src="images/sq.jpg" alt="4th post(expression)"></a>
+                <p>If you are one of the lucky ones, use your words, emotions, art, everything. Expre<a href="#">...Read More</a></p>
+        </section><!--end productDesc4-->
+        </section><!--end productInfo-->
+      <br><br>
+        <form action="/action_page.php">
+  <div class="container">
+    <h2>Subscribe to the Blog</h2>
+    <p></p>
+  </div>
+
+  <div class="container" style="background-color:black">
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="Email address" name="mail" required>
+    <label>
+      <input type="checkbox" checked="checked" name="subscribe" style="color: white"> Daily Newsletter
+    </label>
+  </div>
+
+  <div class="container">
+    <input type="submit" value="Subscribe">
+  </div>
+</form>
+        <footer id="mainFooter">
+        	<div id="footerNav">
+                <a href="contact.html" class="button"><span>Contact</span></a>
+                <a href="about.html" class="button"><span>About</span></a>
+            </div><!--end FooterNav-->
+            <div id="copyRight"><p>©Writer's Block</p></div><!--end Copyright-->
+        </footer><!--end mainFooter-->
+    </div><!--end siteContainer-->
+<script src="js/main.js"></script>    
+</body>
+</html>

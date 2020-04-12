@@ -1,0 +1,657 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Remove this rule, this is only for demo purposes to make the boxes black with white text
+The line height on the <p> tag gives each box a height value*/
+
+/*p
+{
+	color: #fff;
+	line-height: 100px;
+	background: #000;
+	text-align: center;
+	margin: 0;
+}
+
+/*basic reset*/
+/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+.hidden{
+	display: none;
+}
+div,p,body,header,footer,section,article,nav 
+{ 
+	margin: 0; 
+	padding: 0; 
+}	
+
+img 
+{ 
+	border: none; /*Remove border if image is a link*/
+	margin: 0; 
+	padding: 0; 
+}
+
+/*html selectors*/
+
+body 
+{	
+	background-color: black;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #333;
+}
+
+
+/*a:link is for not visited(standard unclicked link), 
+a:visited is for visited, and just a applies to both.*/
+/*a will also style anchor links*/
+
+a:link, a:visited 
+{ 
+ 	text-decoration:none; 
+ 	color: white;	
+}
+
+a:hover, a:active 
+{ 
+	text-decoration:underline; 
+	color: hotpink;
+}
+
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden
+{
+	display: none;
+}
+
+/*section is block level and no width specidied therefore stretches full screen*/
+#topBar
+{
+	background-color: #000;
+	height: 20px;
+}
+
+/*Site Container*/
+/*This is essentially a box that we place the whole site in.  
+We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 20px (960px) so it fits on 1024x768 screens.*/
+
+#siteContainer 
+{	
+	margin: 0 auto;
+	width: 1300px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/*This is a flex container*/
+#mainHeader
+{    
+	max-width: 1920px;
+	background-color: #eaf0f5;
+	margin-top: 0px;
+	padding-bottom: 00px;
+	display: flex;
+	flex-direction: row;
+  /*	justify-content: flex-start;  */
+	border-bottom: solid 1px #DDD;
+}
+
+/*This is a flex item*/
+
+#logo
+{	
+	padding: 10px;
+	width: 400px;
+}
+
+.log{
+  position: relative;
+  left: 30px;
+}
+
+/*This is also a flex item*/
+/*We use margin left auto to send it all the way to the right*/
+#mainNav 
+{	
+
+	font-size: 30px;
+	margin-left: auto;
+	width: 500px;
+}
+
+#promo 
+{	
+	margin-top: 0px;
+	border-bottom: solid 1px #DDD;
+	padding: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+  justify-content: flex-start;
+}
+
+/*Get rid of this, here just to give different height to promo
+#promo p 
+{
+	line-height: 250px;
+}
+*/
+
+#promoText p
+{	
+
+	padding: 00px;
+	line-height: 20px;
+	width: 400px;
+}
+
+
+#promoText 
+{	
+	/*background-color: red;*/
+	
+	width: 400px;
+}
+
+
+
+
+#promoImage 
+{
+	margin-left: auto;
+	width: 300px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  margin-top: 70px;
+	/*position: relative;
+  top: 100px;
+  right: 0px;
+  width: 300px;
+  height: 200px;*/
+}
+
+#promoimage p{
+
+  position: static;
+  top: 80px;
+  right: 0;
+  width: 300px;
+  height: 900px;
+  border: 3px solid #73AD21;
+}
+
+
+
+#productInfo 
+{	
+	text-align: center;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+}
+
+/*Get rid of this, here just to give different height to productInfo*/
+
+#productInfo p{
+	text-align: center;
+}
+
+/*
+#productInfo p 
+{
+	line-height: 300px;
+}
+*/
+
+
+
+.productDesc 
+{
+	width: 200px;
+}
+
+#mainFooter 
+{
+	margin-top: 40px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+#footerNav 
+{   
+	color: white;
+	width: 600px;
+}
+
+#copyRight 
+{
+	margin-left: auto;
+	width: 310px;
+}
+
+/*Page 2 - Notice we are using one style sheet for all of the pages*/
+
+#contentCon {
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+/*Get rid of this, here just to give different height to promo*/
+#contentCon p 
+{
+	line-height: 630px;
+}
+
+#content1 
+{
+	width: 440px;
+}
+
+#content2 
+{
+	margin-left: auto;
+	width: 440px;
+}
+
+/*Page 3*/
+
+#productImages 
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+}
+
+/*Get rid of this, here just to give different height*/
+#productImages p
+{
+	line-height: 250px;
+}
+
+.productImg 
+{
+	width: 280px;
+}
+
+
+#contentAreaBig
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+}
+
+/*Get rid of this, here just to give different height*/
+#contentAreaBig p 
+{
+	line-height: 300px;
+}
+
+#promoImageBig
+{
+	width: 920px;
+  padding: 20px;
+}
+
+
+/*Page 4*/
+
+.productDescLargeLeft 
+{
+	width: 410px;
+}
+
+.productDescLargeRight 
+{
+	width: 410px;
+}
+
+
+
+  /*.Rectangle_1 {
+  background-image: -moz-linear-gradient( 90deg, rgb(255,255,0) 0%, rgb(0,255,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(255,255,0) 0%, rgb(0,255,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(255,255,0) 0%, rgb(0,255,255) 100%);
+  opacity: 0.76;
+  position: absolute;
+  left: -2px;
+  top: 19px;
+  width: 961px;
+  height: 184px;
+  z-index: 7;  
+} */
+
+.Rectangle_1 {
+  background-image: -moz-linear-gradient( 90deg, rgb(243,229,171) 0%, rgb(0,191,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(243,229,171) 0%, rgb(0,191,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(243,229,171) 0%, rgb(0,191,255) 100%);
+  opacity: 0.82;
+  /*position: absolute;
+  left: -2px;
+  top: 19px;
+  width: 961px;
+  height: 184px;
+  z-index: 7;  */
+}
+
+
+
+ /*.Rectangle_1 {
+  opacity: 0.82;
+ position: absolute;
+  left: -2px;
+  top: 19px;
+  width: 961px;
+  height: 184px;
+  z-index: 7; 
+}
+ */
+
+
+#navposition{
+	 padding-top: 20px;
+     padding-bottom: 20px;
+     padding-left: 290px;
+}
+
+
+.button {
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#latest{
+	color: lightgray;
+	text-align: center;
+}
+
+
+
+form {
+  border: 3px solid #1f090d;
+  font-family: Arial;
+}
+
+.container {
+  padding: 20px;
+  background-color: black;
+}
+
+.container h2, p{
+   color: white;
+}
+
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid white;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: hotpink;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }}
+
+  header h1{
+  	font-size: 43px;
+  	font-family: "Helvetica", Times, serif;
+  }
+
+/*
+
+#text{
+	text-align: center;
+}
+
+#text p{
+  font-size: 20px;
+  position: absolute;
+  top: 280px;
+  right: 200px;
+  width: 300px;
+  height: 200px;
+}
+
+.productDescLarge{
+	width: 500px;
+	margin-bottom: 50px;
+}
+
+.productDescLarge p{
+	width: 200px;
+	position: absolute;
+	left: 250px;
+	padding: 10px;
+}
+
+.productDescLarge1{
+	width: 500px;
+	margin-bottom: 50px;
+}
+
+.productDescLarge1 p{
+	width: 200px;
+	position: absolute;
+	right: 250px;
+	padding: 10px;
+}
+
+*/
+
+#text{
+  width: 400px;
+  font-size: 20px;
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
+.productDescLarge{
+  width: 200px;
+  padding-left: 150px;
+}
+.productDescLarge1{
+  width: 200px;
+  padding-right: 150px; 
+}
+.productDescLarge2{
+  margin: 50px;
+}
+
+
+/*contact form*/
+#contactMain{
+  font-family:Arial Black;
+  font-size: 150px;
+}
+.contactSmall{
+  font-size: 80px;
+}
+#con{
+  font-size: 50px;
+  padding-left: 60px;
+  display: inline-block;
+  width: 1000px;
+}
+
+
+
+.button2 {
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  font-size: 30px;
+  padding: 50px;
+  width: 100px;
+  transition: all 0.2s;
+  cursor: pointer;
+
+}
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 20px;
+  transition: 0.2s;
+}
+
+.button2:hover span {
+  padding-right: 25px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#contactLogo{
+  position: relative;
+  left: 800px;
+  bottom: 150px;
+}
+
+#text2{
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+.productDesc p a{
+  font-weight: bold;
+}
+
+.resize{
+  height: 100px;
+}
+
+#contactSpacing{
+  padding: 30px;
+}
+
+.underline{
+  text-decoration: underline;
+}
